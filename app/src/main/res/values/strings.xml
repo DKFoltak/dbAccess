@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">dbAccess</string>
+    <string name="accesodb">Acceso DB</string>
+    <string name="title_activity_listado">listadoActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="crearCliente">Crear cliente</string>
+    <string name="nuevoCliente">Nuevo</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="id">ID:</string>
+    <string name="name">Name</string>
+    <string name="title_listado">Listado</string>
+    <string name="title_detalle">Detalle</string>
+    <string name="title_nuevo">Nuevo</string>
+    <string name="title_actualizar">Actualizar</string>
+    <string name="HomeTitle">Acceso a BD</string>
+    <string name="SplashTitle">Applicacion de ejemplo</string>
+</resources>
