@@ -21,10 +21,10 @@ class DetailFragment : Fragment() {
         id.text = (activity as HomeActivity).clientModel.seleccionado?.id.toString()
         val name = view.findViewById<TextView>(R.id.textView_nameValue)
         name.text = (activity as HomeActivity).clientModel.seleccionado?.name
-        view.findViewById<FloatingActionButton>(R.id.floatingActionButton_edit).setOnClickListener { view ->
+        view.findViewById<FloatingActionButton>(R.id.floatingActionButton_edit).setOnClickListener { _ ->
             findNavController().navigate(R.id.action_detailFragment_to_upsertFragment)
         }
-        view.findViewById<FloatingActionButton>(R.id.floatingActionButton_delete).setOnClickListener { view ->
+        view.findViewById<FloatingActionButton>(R.id.floatingActionButton_delete).setOnClickListener { _ ->
             (activity as HomeActivity).clientModel.delete()
             findNavController().navigateUp()
         }

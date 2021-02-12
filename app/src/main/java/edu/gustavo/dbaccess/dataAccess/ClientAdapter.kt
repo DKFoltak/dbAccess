@@ -7,13 +7,14 @@ import android.widget.TextView
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import edu.gustavo.dbaccess.R
+import kotlinx.coroutines.flow.Flow
 
 class ClientAdapter(val viewModel : ClientViewModel) : RecyclerView.Adapter<ClientAdapter.ViewHolder>() {
     lateinit var list : MutableList<Client>
 
     override fun onAttachedToRecyclerView(recyclerView: RecyclerView) {
         super.onAttachedToRecyclerView(recyclerView)
-        list = viewModel.repositorio.list()
+        list = viewModel.list()
     }
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
