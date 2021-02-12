@@ -31,7 +31,7 @@ class UpsertFragment : Fragment() {
         // Inflate the layout for this fragment
         val name = view.findViewById<EditText>(R.id.textView_nameValue)
         name.setText((activity as HomeActivity).clientModel.seleccionado?.name)
-        view.findViewById<FloatingActionButton>(R.id.floatingActionButton_upsert).setOnClickListener { view ->
+        view.findViewById<FloatingActionButton>(R.id.floatingActionButton_upsert).setOnClickListener { _ ->
             (activity as HomeActivity).clientModel.seleccionado?.name = name.text.toString()
             (activity as HomeActivity).clientModel.upsert()
             findNavController().navigateUp()
